@@ -13,7 +13,7 @@ const TheirMessage = ({ lastMessage, message }) => {
       )}
       {message?.attachments?.length > 0 ? (
         <img
-          src={message.attachment[0].file}
+          src={message.attachments[0].file}
           alt="message-attachment"
           className="message-image"
           style={{ marginLeft: isFirstMessageByUser ? "4px" : "48px" }}
